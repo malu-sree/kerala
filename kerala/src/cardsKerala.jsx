@@ -8,6 +8,7 @@ import w from './image/img5.jpg';
 import v from './image/img6.jpg'
 import { useState } from 'react';
 import{Container,Row,Col} from 'react-bootstrap'
+import commentContext ,{CommentProvider} from './componentProvider'
 
 function CardsKerala() {
   const [title,setTitle]=useState("")

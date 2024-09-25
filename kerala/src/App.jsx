@@ -8,6 +8,8 @@ import Homepage from './homePage'
 import {Routes,Route} from 'react-router-dom'
 import { lazy,Suspense } from 'react'
 import { Spinner } from 'react-bootstrap'
+import {CommentProvider} from './componentProvider';
+
 
 function App() {
   const Hpage=lazy(()=>import('./homePage'))
@@ -15,6 +17,7 @@ function App() {
 
   return (
     <>
+   <CommentProvider>
     <Headernav/>
     <section>
       <Suspense fallback={<div>loading...</div>}>
@@ -25,6 +28,7 @@ function App() {
     </Routes>
     </Suspense>
     </section>
+    </CommentProvider>
     </>
   )
 }

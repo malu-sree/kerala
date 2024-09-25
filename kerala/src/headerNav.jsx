@@ -7,10 +7,14 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Register from './register';
 import Login from './login';
+import { useContext } from 'react';
+import commentContext from './componentProvider';
 
 function Headernav() {
     const [show, setShow] = useState(false);
     const [pass, setPass] = useState(false);
+
+    const {comment,setComment}=useContext(commentContext)
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
@@ -43,6 +47,9 @@ function Headernav() {
                 Separated link
               </NavDropdown.Item>
             </NavDropdown>
+            <Button variant='danger' onClick={()=>{
+              setComment("test")
+            }}>Test</Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
