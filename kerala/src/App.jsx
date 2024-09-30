@@ -9,6 +9,7 @@ import {Routes,Route} from 'react-router-dom'
 import { lazy,Suspense } from 'react'
 import { Spinner } from 'react-bootstrap'
 import {CommentProvider} from './componentProvider';
+import ExuseEffect from './ex_useEffect'
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <>
-   <CommentProvider>
+   {/* <CommentProvider>
     <Headernav/>
     <section>
       <Suspense fallback={<div>loading...</div>}>
@@ -28,7 +29,9 @@ function App() {
     </Routes>
     </Suspense>
     </section>
-    </CommentProvider>
+    </CommentProvider> */}
+
+    <ExuseEffect/>
     </>
   )
 }
