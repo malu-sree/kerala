@@ -10,6 +10,7 @@ import { lazy,Suspense } from 'react'
 import { Spinner } from 'react-bootstrap'
 import {CommentProvider} from './componentProvider';
 import ExuseEffect from './ex_useEffect'
+import Usememoex from './usememoex'
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
     </section>
     </CommentProvider> */}
 
-    <ExuseEffect/>
+    {/* <ExuseEffect/> */}
+    <Usememoex/>
     </>
   )
 }
