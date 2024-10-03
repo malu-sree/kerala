@@ -11,6 +11,7 @@ import { Spinner } from 'react-bootstrap'
 import {CommentProvider} from './componentProvider';
 import ExuseEffect from './ex_useEffect'
 import Usememoex from './usememoex'
+import Usecallbackex from './usecallbackex'
 
 
 function App() {
@@ -33,7 +34,8 @@ function App() {
     </CommentProvider> */}
 
     {/* <ExuseEffect/> */}
-    <Usememoex/>
+    {/* <Usememoex/> */}
+    <Usecallbackex/>
     </>
   )
 }
