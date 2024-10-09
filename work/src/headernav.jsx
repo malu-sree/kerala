@@ -18,6 +18,10 @@ function Headernav() {
               <NavDropdown.Item href="#action/3.2">
                 Sports
               </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.5">Outfits</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.6">
+                Cosmetics
+              </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Books</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
