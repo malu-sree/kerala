@@ -55,6 +55,7 @@ function ContactPage() {
   return (
     <Container className="mt-5">
       <h1 className="text-center">Contact Us</h1>
+      
       <Form onSubmit={handleSubmit}>
         {error && <Alert variant="danger">{error}</Alert>}
         {success && <Alert variant="success">Your message has been sent!</Alert>}

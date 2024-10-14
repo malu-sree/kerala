@@ -4,13 +4,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState } from 'react';
 import { FaHome, FaInfoCircle, FaEnvelope } from 'react-icons/fa'
+import { SiWelcometothejungle } from "react-icons/si";
 
 function Headernav() {
     const [show, setShow] = useState(false);
   return (
     <Navbar expand="lg" style={{backgroundColor:'grey'}}>
       <Container>
-        <Navbar.Brand href="#home">WELCOME</Navbar.Brand>
+        <Navbar.Brand >
+        <SiWelcometothejungle style={{fontSize:'40px',color:"brown"}}/>ELCOME</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
