@@ -9,7 +9,7 @@ import Footer from './components/footer';
 const HomePage = lazy(() => import('./pages/homepage'));
 const AboutPage = lazy(() => import('./pages/aboutpage'));
 const ContactPage = lazy(() => import('./pages/contact'));
-const NotFoundPage = lazy(() => import('./pages/notfoundpage')); // Create this component
+const NotFoundPage = lazy(() => import('./pages/notfoundpage'));
 
 function App() {
   return (

@@ -2,13 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import ExuseEffect from './ex_useEffect'
-import Headernav from './headernav.jsx'
-import Slider from './slider.jsx'
 import axios from 'axios'
-
 function App() {
-  const [msg, setMsg] = useState("")
+  //const [count, setCount] = useState(0)
+  const [msg, setMsg] = useState([])
   const messageGet=()=>{
     const url="http://localhost:9000/home"
     axios.get(url)
@@ -19,11 +16,12 @@ function App() {
 
   return (
     <>
-    {/* <Headernav/>
-    <Slider/>
-      <ExuseEffect/> */}
-      <button onClick={messageGet}>Message</button>
-      {msg}
+       <button onClick={messageGet}>Message</button>
+       {msg.map((item)=>{
+        return(
+          <p>{item}</p>
+        )
+       })}
     </>
   )
 }
